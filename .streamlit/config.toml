@@ -1,0 +1,90 @@
+[global]
+# Global configuration for the Streamlit app
+
+# Development mode
+developmentMode = false
+
+[server]
+# Server configuration
+
+# Port to run the app on
+port = 8501
+
+# Enable CORS
+enableCORS = true
+
+# Enable XSS protection
+enableXsrfProtection = true
+
+# Max upload size (200MB for large videos)
+maxUploadSize = 200
+
+# Enable websocket compression
+enableWebsocketCompression = true
+
+# Headless mode
+headless = false
+
+# Run on save
+runOnSave = false
+
+# Note: allowedOrigins is deprecated - CORS is handled by enableCORS above
+
+[browser]
+# Browser configuration
+
+# Gather usage stats
+gatherUsageStats = false
+
+# Server address
+serverAddress = "localhost"
+
+# Server port
+serverPort = 8501
+
+[theme]
+# Theme configuration
+
+# Primary color (blue)
+primaryColor = "#1f77b4"
+
+# Background color (white)
+backgroundColor = "#ffffff"
+
+# Secondary background color (light gray)
+secondaryBackgroundColor = "#f0f2f6"
+
+# Text color (dark)
+textColor = "#262730"
+
+# Font family
+font = "sans serif"
+
+[client]
+# Client configuration
+
+# Toolbar mode
+toolbarMode = "auto"
+
+[runner]
+# Runner configuration
+
+# Magic enabled
+magicEnabled = true
+
+# Post script GC
+postScriptGC = true
+
+# Fast reruns
+fastReruns = true
+
+[logger]
+# Logger configuration
+
+# Log level
+level = "info"
+
+# Message format
+messageFormat = "%(asctime)s %(message)s"
+
+# Note: [deprecation] section removed as showPyplotGlobalUse is no longer a valid config option
